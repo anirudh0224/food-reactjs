@@ -1,24 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import ResponsiveAppBar from './components/NavbarWeb';
+import Landing from './components/Landing';
+import Services from './components/Services';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom.min';
+import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
+import { Route } from 'react-router-dom/cjs/react-router-dom.min';
+import Footer from './components/Footer';
+import About from './components/About';
+import Contact from './components/Contact';
+import Menu from './components/Menu';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <BrowserRouter>
+    //   <ResponsiveAppBar/>
+    //   <Switch>
+    //     <Route excate path="/"><Landing/><Services/></Route>
+    //     <Route></Route>
+    //     <Route></Route>
+    //   </Switch>
+    //   <Footer/>
+    // </BrowserRouter>
+    <>
+      {/* <Landing />
+      <Services />
+      <Footer /> */}
+      {/* <About/> */}
+      {/* <Contact/> */}
+      <ResponsiveAppBar />
+      <Landing />
+      <Services />
+      <About />
+      <Menu />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

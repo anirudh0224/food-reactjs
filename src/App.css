@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+* {
+    font-family: "Reddit Sans Condensed", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.css-1t6c9ts {
+    color: aqua !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.css-1t6c9ts:hover {
+    color: red;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.red {
+    color: red !important;
 }
 
-.App-link {
-  color: #61dafb;
+.hello {
+    color: brown !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slick-track {
+    width: 100% !important;
+}
+
+.appbarColor {
+    background-color: rgb(23, 31, 40) !important;
+}
+
+.menuBar {
+    z-index: 3;
+}
+
+.homePage {
+    position: relative;
+    background-image: url('./components/Images/backmenu.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    z-index: 3;
+
+}
+
+.homePage::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity (0.5) as needed */
+    z-index: 1;
+    /* Ensure the overlay appears above the background image */
+}
+
+.homePage>* {
+    position: relative;
+    z-index: 2;
+    /* Ensure the content appears above the overlay */
+}
+
+@keyframes hero-dish {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+
+.imgServ {
+    background-image: url("./components/Images/imgServ.jpeg");
+    width: 100px;
+    height: 200px;
+}
+
+
+
+.boxicon:hover .iconFooter {
+    background-color: white;
+    color: #FEA116;
+    transition: .2s;
+}
+
+.iconFooter {
+    color: rgb(255, 255, 255);
+}
+
+.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+    border-color: white !important;
+}
+
+.css-1q964xs-MuiFormLabel-root-MuiInputLabel-root {
+    color: white !important;
+}
+
+.css-1pbc52w {
+    color: white !important;
+}
+
+.css-j882ge-MuiInputBase-root-MuiOutlinedInput-root {
+    color: white !important;
+}
+
+.Mui-focused {
+    color: white !important;
+}
+
+#outlined-basic {
+    border-color: black !important;
+}
+
+.css-1g9f4xq-MuiFormLabel-root-MuiInputLabel-root {
+    color: black !important;
+}
+
+.css-y1qizs-MuiInputBase-root-MuiFilledInput-root::after {
+    border-bottom: 2px solid black !important;
+}
+
+.css-1a7v3y2-MuiInputBase-input-MuiFilledInput-input {
+    color: black !important;
+}
+
+.css-1ryfs1z-MuiInputBase-input-MuiFilledInput-input {
+    color: black !important;
+}
+
+.css-1609v4b-MuiInputBase-root-MuiFilledInput-root::after {
+    border-bottom: 2px solid black !important;
+}
+
+.css-1idhdrg-MuiButtonBase-root-MuiButton-root {
+    width: 100% !important;
+    margin: 0px 7px !important;
 }
